@@ -9,31 +9,24 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="form-inner">
             <!-- Tiêu đề trang đăng ký -->
             <div class="title-text">
-                <div class="title">Signup</div>
+                <h3>Signup</h3>
             </div>
-            <!-- form -->
             <form onsubmit="signup()">
-                <!-- nhap ten -->
                 <div class="field">
-                    <input id="username" type="text" placeholder="Username">
+                    <input id="username" type="text" placeholder="Username" required>
                 </div>
-                <!-- nhap mat khau -->
                 <div class="field">
-                    <input id="password" type="password" placeholder="Password" >
+                    <input id="password" type="password" placeholder="Password" required>
                 </div>
-                <!-- nhap lai mat khau -->
                 <div class="field">
                     <input id="password" type="password" placeholder="Confirm password" required>
                 </div>
-                <!-- chuyen qua trang dang nhap -->
-                <a href="./login.html" class="login-link">Login</a>
-                <!-- nut submit dang ky -->
-                <button id="btnSignup" class="btn">Sign Up</button>
+                <div class="submit">
+                    <button class="submit_login">Signup</button></div>
+                <div class="signup_link">Already a member? <a href="login.html">Login</a></div>
             </form>
-        </div>
     </div>
     <script src="./login.js"></script>
 </body>
